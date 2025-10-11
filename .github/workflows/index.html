@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pesquisa - Segurança da Informação | WM Saúde</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>WM SAÚDE | NUTC</h1>
+    <p>Pesquisa sobre Segurança da Informação</p>
+  </header>
+
+  <main class="container">
+    <form id="surveyForm">
+      <h2>Pesquisa sobre Segurança da Informação</h2>
+      <p class="muted">Projeto de Extensão – respostas anônimas. Leva ~3 minutos.</p>
+
+      <label>1) Você tem conhecimento sobre o que é Segurança da Informação?</label>
+      <div class="options">
+        <label><input type="radio" name="conhecimento" value="Sim" required> Sim</label>
+        <label><input type="radio" name="conhecimento" value="Não"> Não</label>
+        <label><input type="radio" name="conhecimento" value="Já ouvi falar"> Já ouvi falar, mas não sei explicar</label>
+      </div>
+
+      <label>2) Já recebeu treinamento sobre proteção de dados?</label>
+      <div class="options">
+        <label><input type="radio" name="treinamento" value="Sim" required> Sim</label>
+        <label><input type="radio" name="treinamento" value="Não"> Não</label>
+      </div>
+
+      <label>3) Com que frequência troca suas senhas?</label>
+      <select name="frequencia" required>
+        <option value="">Selecione</option>
+        <option>A cada 30 dias</option>
+        <option>A cada 90 dias</option>
+        <option>Apenas quando esqueço</option>
+        <option>Nunca troco</option>
+      </select>
+
+      <label>4) Costuma compartilhar senhas?</label>
+      <div class="options">
+        <label><input type="radio" name="compartilha" value="Sim" required> Sim</label>
+        <label><input type="radio" name="compartilha" value="Não"> Não</label>
+        <label><input type="radio" name="compartilha" value="Às vezes"> Às vezes</label>
+      </div>
+
+      <label>5) Em caso de e-mail suspeito, qual atitude?</label>
+      <div class="options">
+        <label><input type="radio" name="email" value="Abro para verificar" required> Abro para verificar</label>
+        <label><input type="radio" name="email" value="Apago imediatamente"> Apago imediatamente</label>
+        <label><input type="radio" name="email" value="Peço ajuda ao TI"> Peço ajuda ao setor de TI</label>
+      </div>
+
+      <label>6) Você sabe o que é backup?</label>
+      <div class="options">
+        <label><input type="radio" name="backup" value="Sim" required> Sim, considero importante</label>
+        <label><input type="radio" name="backup" value="Ouvi falar"> Já ouvi falar, mas não sei</label>
+        <label><input type="radio" name="backup" value="Não"> Não sei o que é</label>
+      </div>
+
+      <label>7) O hospital utiliza antivírus?</label>
+      <div class="options">
+        <label><input type="radio" name="antivirus" value="Sim" required> Sim</label>
+        <label><input type="radio" name="antivirus" value="Não"> Não</label>
+        <label><input type="radio" name="antivirus" value="Não sei"> Não sei informar</label>
+      </div>
+
+      <label>8) Maior risco no ambiente hospitalar?</label>
+      <select name="risco" required>
+        <option value="">Selecione</option>
+        <option>Vazamento de dados de pacientes</option>
+        <option>Acesso indevido por terceiros</option>
+        <option>Falhas na rede</option>
+        <option>Falta de conscientização dos colaboradores</option>
+        <option>Outro</option>
+      </select>
+
+      <label>9) Ação mais importante para melhorar a segurança?</label>
+      <select name="acao" required>
+        <option>Treinamentos para funcionários</option>
+        <option>Investimentos em tecnologia</option>
+        <option>Políticas de segurança e controle de acesso</option>
+        <option>Monitoramento constante dos sistemas</option>
+      </select>
+
+      <label>10) Sugestões / comentários</label>
+      <textarea name="opiniao" rows="4" placeholder="Digite sua sugestão..."></textarea>
+
+      <button id="submitBtn" type="submit">Enviar Resposta</button>
+      <p id="status" class="muted"></p>
+    </form>
+  </main>
+
+  <footer>
+    © WM Saúde / NUTC — Projeto de Extensão
+  </footer>
+
+  <!-- Firebase compat libs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
