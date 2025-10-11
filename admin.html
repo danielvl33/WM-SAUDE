@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Painel - Respostas | WM Saúde</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>WM SAÚDE | NUTC</h1>
+    <p>Painel de Respostas — Segurança da Informação</p>
+  </header>
+  <main class="container">
+    <section id="authArea">
+      <h2>Login do Administrador</h2>
+      <p class="muted">Acesse com seu e-mail cadastrado (admin) para ver as respostas.</p>
+      <label>Email</label>
+      <input id="email" type="text" placeholder="admin@wm.com">
+      <label>Senha</label>
+      <input id="password" type="password" placeholder="senha">
+      <button id="loginBtn">Entrar</button>
+      <p id="authStatus" class="muted"></p>
+    </section>
+
+    <section id="panel" style="display:none;">
+      <h2>Respostas recebidas</h2>
+      <button id="logoutBtn">Sair</button>
+      <div id="results"></div>
+    </section>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
