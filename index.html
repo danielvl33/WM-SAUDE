@@ -1,106 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pesquisa - Segurança da Informação | WM Saúde</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>WM SAÚDE | NUTC</h1>
-    <p>Pesquisa sobre Segurança da Informação</p>
-  </header>
-
-  <main class="container">
-    <form id="surveyForm">
-      <h2>Pesquisa sobre Segurança da Informação</h2>
-      <p class="muted">Projeto de Extensão – respostas anônimas. Leva ~3 minutos.</p>
-
-      <label>1) Você tem conhecimento sobre o que é Segurança da Informação?</label>
-      <div class="options">
-        <label><input type="radio" name="conhecimento" value="Sim" required> Sim</label>
-        <label><input type="radio" name="conhecimento" value="Não"> Não</label>
-        <label><input type="radio" name="conhecimento" value="Já ouvi falar"> Já ouvi falar, mas não sei explicar</label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Perfil profissional de Janaina, com foco em atendimento, comunicação e relacionamento humano."
+    />
+    <title>Janaina | Perfil Profissional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand">Janaina</div>
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#especialidades">Especialidades</a>
+          <a href="#contato">Contato</a>
+        </nav>
       </div>
+    </header>
 
-      <label>2) Já recebeu treinamento sobre proteção de dados?</label>
-      <div class="options">
-        <label><input type="radio" name="treinamento" value="Sim" required> Sim</label>
-        <label><input type="radio" name="treinamento" value="Não"> Não</label>
+    <main id="inicio">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Perfil profissional</p>
+            <h1>Janaina, acolhimento, estratégia e presença.</h1>
+            <p class="lead">
+              Sou uma profissional apaixonada por conectar pessoas, criar experiências
+              autênticas e transformar desafios em soluções humanas e eficientes.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contato">Entre em contato</a>
+              <a class="btn btn-secondary" href="#sobre">Conhecer mais</a>
+            </div>
+            <ul class="highlights" aria-label="Principais diferenciais">
+              <li>Atendimento humanizado</li>
+              <li>Comunicação clara</li>
+              <li>Compromisso com resultados</li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="Foto de perfil ilustrativa de Janaina">
+            <div class="avatar">J</div>
+            <div class="badge">Disponível para projetos</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="sobre">
+        <div class="container two-columns">
+          <div>
+            <p class="section-tag">Sobre</p>
+            <h2>Uma trajetória construída com empatia e dedicação.</h2>
+          </div>
+          <div>
+            <p>
+              Com foco em relacionamento, organização e desenvolvimento de qualidade,
+              Janaina atua com sensibilidade para entender necessidades, propor melhorias
+              e fortalecer conexões reais entre pessoas, marcas e serviços.
+            </p>
+            <p>
+              Sua atuação combina visão estratégica com atenção aos detalhes, sempre com o
+              objetivo de entregar experiências positivas, claras e memoráveis.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted-section" id="especialidades">
+        <div class="container">
+          <p class="section-tag">Especialidades</p>
+          <h2>Áreas em que posso contribuir</h2>
+
+          <div class="card-grid">
+            <article class="info-card">
+              <span class="icon">01</span>
+              <h3>Atendimento ao cliente</h3>
+              <p>Criação de experiências positivas, escuta ativa e resolução de demandas com acolhimento.</p>
+            </article>
+
+            <article class="info-card">
+              <span class="icon">02</span>
+              <h3>Comunicação</h3>
+              <p>Mensagens claras, profissionais e estratégicas para fortalecer a imagem e o relacionamento.</p>
+            </article>
+
+            <article class="info-card">
+              <span class="icon">03</span>
+              <h3>Organização</h3>
+              <p>Estruturação de processos, rotina eficiente e atenção à qualidade no atendimento e execução.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section values">
+        <div class="container">
+          <p class="section-tag">Valores</p>
+          <div class="metrics">
+            <div>
+              <strong>Humanização</strong>
+              <span>Relacionamentos genuínos e respeitosos</span>
+            </div>
+            <div>
+              <strong>Transparência</strong>
+              <span>Comunicação honesta e clara</span>
+            </div>
+            <div>
+              <strong>Compromisso</strong>
+              <span>Entregar com atenção e responsabilidade</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contato">
+        <div class="container contact-wrap">
+          <div>
+            <p class="section-tag">Contato</p>
+            <h2>Vamos conversar sobre sua próxima oportunidade?</h2>
+            <p>
+              Estou disponível para projetos, parcerias, atendimento e oportunidades que valorizem
+              relacionamento, estratégia e qualidade.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <a href="mailto:janaina@email.com">janaina@email.com</a>
+            <a href="tel:+5511999999999">+55 (11) 99999-9999</a>
+            <a href="https://wa.me/5511999999999" target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-wrap">
+        <span>© 2026 Janaina</span>
+        <span>Perfil profissional</span>
       </div>
-
-      <label>3) Com que frequência troca suas senhas?</label>
-      <select name="frequencia" required>
-        <option value="">Selecione</option>
-        <option>A cada 30 dias</option>
-        <option>A cada 90 dias</option>
-        <option>Apenas quando esqueço</option>
-        <option>Nunca troco</option>
-      </select>
-
-      <label>4) Costuma compartilhar senhas?</label>
-      <div class="options">
-        <label><input type="radio" name="compartilha" value="Sim" required> Sim</label>
-        <label><input type="radio" name="compartilha" value="Não"> Não</label>
-        <label><input type="radio" name="compartilha" value="Às vezes"> Às vezes</label>
-      </div>
-
-      <label>5) Em caso de e-mail suspeito, qual atitude?</label>
-      <div class="options">
-        <label><input type="radio" name="email" value="Abro para verificar" required> Abro para verificar</label>
-        <label><input type="radio" name="email" value="Apago imediatamente"> Apago imediatamente</label>
-        <label><input type="radio" name="email" value="Peço ajuda ao TI"> Peço ajuda ao setor de TI</label>
-      </div>
-
-      <label>6) Você sabe o que é backup?</label>
-      <div class="options">
-        <label><input type="radio" name="backup" value="Sim" required> Sim, considero importante</label>
-        <label><input type="radio" name="backup" value="Ouvi falar"> Já ouvi falar, mas não sei</label>
-        <label><input type="radio" name="backup" value="Não"> Não sei o que é</label>
-      </div>
-
-      <label>7) O hospital utiliza antivírus?</label>
-      <div class="options">
-        <label><input type="radio" name="antivirus" value="Sim" required> Sim</label>
-        <label><input type="radio" name="antivirus" value="Não"> Não</label>
-        <label><input type="radio" name="antivirus" value="Não sei"> Não sei informar</label>
-      </div>
-
-      <label>8) Maior risco no ambiente hospitalar?</label>
-      <select name="risco" required>
-        <option value="">Selecione</option>
-        <option>Vazamento de dados de pacientes</option>
-        <option>Acesso indevido por terceiros</option>
-        <option>Falhas na rede</option>
-        <option>Falta de conscientização dos colaboradores</option>
-        <option>Outro</option>
-      </select>
-
-      <label>9) Ação mais importante para melhorar a segurança?</label>
-      <select name="acao" required>
-        <option>Treinamentos para funcionários</option>
-        <option>Investimentos em tecnologia</option>
-        <option>Políticas de segurança e controle de acesso</option>
-        <option>Monitoramento constante dos sistemas</option>
-      </select>
-
-      <label>10) Sugestões / comentários</label>
-      <textarea name="opiniao" rows="4" placeholder="Digite sua sugestão..."></textarea>
-
-      <button id="submitBtn" type="submit">Enviar Resposta</button>
-      <p id="status" class="muted"></p>
-    </form>
-  </main>
-
-  <footer>
-    © WM Saúde / NUTC — Projeto de Extensão
-  </footer>
-
-  <!-- Firebase compat libs -->
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-  <script src="app.js"></script>
-</body>
+    </footer>
+  </body>
 </html>
